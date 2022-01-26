@@ -1,0 +1,52 @@
+@import "../../global.scss";
+
+.t {
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    border: 2px solid purple;
+    position: fixed;
+    top: 10px;
+    right: 75px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 1s ease;
+
+    &.active {
+        border: 2px solid white;
+    }
+
+
+.t-icon-moon {
+    width: 15px;
+    height: 15px;
+    color: rgb(179, 178, 178);
+    border: none;
+    outline: none;
+}
+.t-icon-sun {
+    width: 15px;
+    height: 15px;
+    color: rgb(224, 224, 18);
+    border: none;
+    outline: none;
+}
+
+.t-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+    left: 0;
+    padding: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+}

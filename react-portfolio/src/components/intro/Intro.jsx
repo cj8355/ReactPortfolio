@@ -1,10 +1,14 @@
-import "./intro.scss"
-import { init } from 'ityped'
-import { useEffect, useRef } from "react"
+import "./intro.scss";
+import { init } from 'ityped';
+import { useEffect, useRef, useContext } from "react";
+import ArrowDropDownCircleOutlinedIcon from '@mui/icons-material/ArrowDropDownCircleOutlined';
+import { ThemeContext } from "../../context";
 
 export default function Intro() {
 
     const textRef = useRef();
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
 
     useEffect(() => {
         init(textRef.current, {
@@ -30,7 +34,7 @@ export default function Intro() {
                     <h3>Freelance <span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio">
-                    <img src="assets/downarrow.png" alt="" />
+                    <ArrowDropDownCircleOutlinedIcon className="downArrow" style={{color: darkMode && "white" }} />
                 </a>
             </div>
         </div>

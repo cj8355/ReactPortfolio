@@ -1,30 +1,13 @@
-import Pagination from "react-bootstrap/Pagination"
+import * as React from 'react';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+import "./scrollDots.scss"
 
-
-export default function ScrollDots() {
-let active = 2;
-  let items = [];
-  for (let number = 1; number <= 5; number++) {
-    items.push(
-      <Pagination.Item key={number} active={number === active}>
-        {number}
-      </Pagination.Item>,
-    );
-  }
-  
-  const paginationBasic = (
-    <div>
-      <Pagination>{items}</Pagination>
-      <br />
-  
-      <Pagination size="lg">{items}</Pagination>
-      <br />
-  
-      <Pagination size="sm">{items}</Pagination>
-    </div>
-  );
+export default function PaginationSize() {
   return (
-      <div>{paginationBasic}</div>
-  )
+    <Stack spacing={2}>
+      <Pagination id="scrollDot" count={6} size="small" hidePrevButton hideNextButton/>
+      
+    </Stack>
+  );
 }
-  

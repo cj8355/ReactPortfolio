@@ -1,3 +1,64 @@
-.skills {
-    background-color: red;
+@import "../../global.scss";
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding-top: 10px;
+    
+    
+    
+
+    @include mobile {
+        display: none;
+    }
+
+    h1 {
+        
+    }
+
+    .skills {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    
+
+    .skillIcon {
+        height: 150px;
+        width: 170px;
+        border-radius: 15px;
+        margin: 10px;
+        border: 1px solid purple;
+        
+    }
+}
+}
+
+
+.skillssm {
+    display: none;
+    background-color: purple;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+        display: flex;
+        background-color: hotpink;
+        
+    }
+
+    .skillIconsm {
+        height: 150px;
+        width: 170px;
+        border-radius: 15px;
+        margin: 10px;
+        
+        
+    }
 }

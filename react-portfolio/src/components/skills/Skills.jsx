@@ -1,13 +1,49 @@
 import "./skills.scss"
-import SkillsIcons from "./skillsIcons/JS.png"
-import SkillsIcons2 from "./skillsIcons/css.png"
+import JS from "./skillsIcons/JS.png"
+import CSS from "./skillsIcons/css.png"
+import HTML from "./skillsIcons/html.png"
+import express from "./skillsIcons/express.png"
+import mongo from "./skillsIcons/mongo.png"
+import mysql from "./skillsIcons/mysql.png"
+import react from "./skillsIcons/react.png"
+import node from "./skillsIcons/node.png"
+import JSsm from "./skillsIcons/JSsm.jpg"
+import CSSsm from "./skillsIcons/csssm.png"
+import HTMLsm from "./skillsIcons/htmlsm.jpg"
+import expresssm from "./skillsIcons/expresssm.jpg"
+import mongosm from "./skillsIcons/mongosm.jpg"
+import mysqlsm from "./skillsIcons/mysqlsm.jpg"
+import reactsm from "./skillsIcons/reactsm.jpg"
+import nodesm from "./skillsIcons/nodesm.jpg"
+import git from "./skillsIcons/github.png"
 
 export default function Skills() {
-    return (
+    return ([
+        <div className="skillsContainer">
+        <h1>Skills</h1>
         <div className="skills" id="skills">
-           <img src={SkillsIcons} alt="skill Badge" />
-           <img src={SkillsIcons2} alt="skill Badge" />
-           
+           <img src={JS} className="skillIcon" alt="skill Badge" />
+           <img src={CSS} className="skillIcon" alt="skill Badge" />
+           <img src={HTML} className="skillIcon" alt="skill Badge" />
+           <img src={express} className="skillIcon" alt="skill Badge" />
+           <img src={mongo} className="skillIcon" alt="skill Badge" />
+           <img src={mysql} className="skillIcon" alt="skill Badge" />
+           <img src={react} className="skillIcon" alt="skill Badge" />
+           <img src={node} className="skillIcon" alt="skill Badge" />
+           <img src={git} className="skillIcon" alt="skill Badge" />
         </div>
-    )
+        </div>,
+
+        <div className="skillssm" id="skillssm">
+            <h1>Skills</h1>
+        <img src={JSsm} className="skillIconsm" alt="skill Badge" />
+        <img src={CSSsm} className="skillIconsm" alt="skill Badge" />
+        <img src={HTMLsm} className="skillIconsm" alt="skill Badge" />
+        <img src={expresssm} className="skillIconsm" alt="skill Badge" />
+        <img src={mongosm} className="skillIconsm" alt="skill Badge" />
+        <img src={mysqlsm} className="skillIconsm" alt="skill Badge" />
+        <img src={reactsm} className="skillIconsm" alt="skill Badge" />
+        <img src={nodesm} className="skillIconsm" alt="skill Badge" />
+        </div>
+]);
 }

@@ -1,4 +1,5 @@
-import "./menu.scss"
+import "./menu.scss";
+import Resume from "../../Documents/Resume 11.16.2021.pdf";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
     return (
@@ -21,6 +22,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
                     <a href="#contact">Contact</a>
+                </li>
+                <li onClick={()=>setMenuOpen(false)}>
+                    <a href={Resume} target="_blank">Resume</a>
                 </li>
             </ul>
         

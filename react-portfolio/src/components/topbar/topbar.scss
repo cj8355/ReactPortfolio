@@ -33,6 +33,10 @@
                 align-items: center;
                 margin-left: 30px;
 
+                @include mobile {
+                    display: none;
+                }
+
                 .icon {
                     font-size: 18px;
                     margin-right: 5px;
@@ -41,6 +45,16 @@
                 span{
                     font-size: 15px;
                     font-weight: 500;
+                }
+
+                .gitHubIcon {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .linkedInIcon {
+                    width: 30px;
+                    height: 30px;
                 }
             }
         }
@@ -69,6 +83,16 @@
     &.active {
         background-color: $mainColor;
         color: white;
+
+
+            .gitHubIcon {
+                color: white;
+            }
+
+            .linkedInIcon {
+                color: white;
+            }
+        
 
         .hamburger {
             span {
