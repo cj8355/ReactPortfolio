@@ -1,6 +1,11 @@
-import "./testimonials.scss"
+import "./testimonials.scss";
+import { ThemeContext } from "../../context";
+import { useState, useRef, useContext } from "react";
 
 export default function Testimonials() {
+
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
     const data = [
         {
           id: 1,
@@ -39,7 +44,7 @@ export default function Testimonials() {
             <h1>Testimonials</h1>
             <div className="container">
                 {data.map((d) => ( 
-                <div className={d.featured ? "card featured" : "card"}>
+                <div className={d.featured ? "card featured" : "card"} style={{ backgroundColor: darkMode && "purple" }} >
                     <div className="top">
                         <img src="assets/right-arrow.png" className="left" alt="" />
                         <img 
@@ -49,7 +54,7 @@ export default function Testimonials() {
                         />
                         <img className="right" src={d.icon} alt="" />
                     </div>
-                    <div className="center">
+                    <div className="center" style={{ backgroundColor: darkMode && "gray" }}>
                     {d.desc}
                     </div>
                     <div className="bottom">

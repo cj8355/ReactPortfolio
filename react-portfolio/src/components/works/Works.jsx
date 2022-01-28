@@ -10,34 +10,45 @@ export default function Works() {
     const [currentSlide,setCurrentSlide] = useState(0);
     const theme = useContext(ThemeContext)
     const darkMode = theme.state.darkMode;
+    
 
     const data = [
         {
             id: "1",
-            icon: "./assets/mobile.png",
-            title: "Web Design",
-            desc: "This is the description22",
-            img: "./assets/img1.jfif"
+            icon: "assets/mobile.png",
+            title: "Code Quiz",
+            desc: "Code quiz application where users tet their coding knowledge.",
+            img: "assets/codeQuiz.JPG",
+            livesite: "https://cj8355.github.io/Code_Quiz/",
+            repo: "https://github.com/cj8355/Code_Quiz",
+            techUsed: [ "HTML", "CSS", "JS"]
         },
         {
             id: "2",
-            icon: "./assets/globe.png",
-            title: "Mobile app",
-            desc: "This is the description77777",
-            img: "./assets/img2.jfif"
+            icon: "assets/mobile.png",
+            title: "Tech Blog",
+            desc: "Tech Blog application using node, express and mongo",
+            img: "assets/techBlog.JPG",
+            livesite: "https://powerful-retreat-67806.herokuapp.com/",
+            repo: "https://github.com/cj8355/Tech-Blog",
+            techUsed: [ "MongoDb", "Express", "Node"]
         },
         {
             id: "3",
-            icon: "./assets/mobile.png",
-            title: "APPPPPPP",
-            desc: "This is the description8888",
-            img: "./assets/img3.jfif"
+            icon: "assets/globe.png",
+            title: "Google Book Search",
+            desc: "Book search application using Google Book API",
+            img: "assets/bookSearch.JPG",
+            livesite: "https://radiant-atoll-72923.herokuapp.com/stats",
+            repo: "https://github.com/cj8355/Book-Search-Engine",
+            techUsed: [ "React", "Express", "Node", "MongoDb", "RRRR"]
         },
     ];
 
     const handleClick = (way)=> {
         way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2) :
         setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+        
     };
     return (
         <div className='works' id='works'> 
@@ -54,9 +65,18 @@ export default function Works() {
                                 <h2>{d.title}</h2>
                                 <p>{d.desc}</p>
                                 <div className="iconContainer">
-                                <a href="https://www.linkedin.com/in/charles-callender-043b3886/" target="_blank"> <LanguageOutlinedIcon className="websiteIcon" /> </a>
-                                <a href="https://github.com/" target="_blank"> <GitHubIcon className="gitHubIcon" /> </a>
+                                <a href={d.livesite} target="_blank"> <LanguageOutlinedIcon className="websiteIcon" /> </a>
+                                <a href={d.repo} target="_blank"> <GitHubIcon className="gitHubIcon" /> </a>
                                 </div>
+                                
+                                {d.techUsed.length && (
+                                    <ul className="techUsed">
+                                        {d.techUsed.map((tech, i) => (
+                                    <li key={i}>{tech}</li>
+                                    ))}
+                                    </ul>
+                                    )}
+                                    
                             </div>
                         </div>
                         <div className="right">

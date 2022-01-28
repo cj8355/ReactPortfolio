@@ -1,15 +1,19 @@
 import "./portfolio.scss";
 import * as React from 'react';
 import PortfolioList from "../portfolioList/PortfolioList";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import { featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio, contentPortfolio } from "../../data";
-import vid1 from "./vid1.gif";
-import vid2 from "./vid2.webm";
+import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { ThemeContext } from "../../context";
+
 
 export default function Portfolio({videoDisplay, setVideoDisplay}) {
     const [selected,setSelected] = useState("featured");
     const [data,setData] = useState([]);
     /*const [videoDisplay,setVideoDisplay] = useState([false]);*/
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
    
 
     const list = [
@@ -82,7 +86,7 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
                     <PortfolioList title={item.title} active={selected === item.id}
                     setSelected={setSelected}
                     id={item.id}
-                    video={vid1}
+                    /*video={item.video}*/
                     />
                 ))}
             </ul>
@@ -90,10 +94,14 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
                 {data.map((d) => (
                     <div className="item">
                     <img src={d.img} alt="" />
-                    <h3>{d.title}</h3>
+                    <h3 style={{ color: darkMode && "white" }}>{d.title}</h3>
+                    <div className="iconContainer" >
+                                <a href={d.livesite} target="_blank"> <LanguageOutlinedIcon className="websiteIcon" style={{ color: darkMode && "white" }}/> </a>
+                                <a href={d.repo} target="_blank"> <GitHubIcon className="gitHubIcon" style={{ color: darkMode && "white" }}/> </a>
+                                </div>
                     {
                     <video className="video" loop preload="none" muted onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}>
-                        <source src={vid2} type="video/webm" />
+                        <source src={d.video} type="video/webm" />
                     </video> }
                 </div>
 

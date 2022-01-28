@@ -2,11 +2,12 @@
 import "./contact.scss";
 import * as React from 'react';
 import { useState, useRef, useContext } from "react";
+
 import emailjs from '@emailjs/browser';
 import { ThemeContext } from "../../context";
 
 export default function Contact() {
-    const formRef = useRef();
+    /*const formRef = useRef();*/
     const [message, setMessage] = useState(false)
     const theme = useContext(ThemeContext)
     const darkMode = theme.state.darkMode;
@@ -35,10 +36,10 @@ export default function Contact() {
             <div className="right">
                 <h2>Contact.</h2>
                 <form onSubmit={handleSubmit}>
-                    <input style={{ backgroundColor: darkMode && "black", color: darkMode && "white" }} type="text" placeholder="Name" name="user_name"/>
-                    <input style={{ backgroundColor: darkMode && "black", color: darkMode && "white" }} type="text" placeholder="Subject" name="user_subject"/>
-                    <input style={{ backgroundColor: darkMode && "black", color: darkMode && "white" }} type="text" placeholder="Email" name="user_email"/>
-                    <textarea style={{ backgroundColor: darkMode && "black", color: darkMode && "white"}} placeholder="Message" name="user_message"></textarea>
+                    <input style={{ backgroundColor: darkMode && "black", color: darkMode && "white" }} type="text" placeholder="Name" name="user_name"  required title="Please provide a name"/>
+                    <input style={{ backgroundColor: darkMode && "black", color: darkMode && "white" }} type="text" placeholder="Subject" name="user_subject" required title="Please provide a subject" />
+                    <input style={{ backgroundColor: darkMode && "black", color: darkMode && "white" }} type="text" placeholder="Email" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$" required title="Email is invalid"/>
+                    <textarea style={{ backgroundColor: darkMode && "black", color: darkMode && "white"}} placeholder="Message" name="user_message" required title="Please type a message"></textarea>
                     <button type="submit">Send</button>
                     {message && <span className="contactMsg">Thanks, I'll reply ASAP :)</span>}
                 </form>

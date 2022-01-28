@@ -3,18 +3,62 @@
 .skillsContainer {
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     padding-top: 10px;
     
+
+    @include mobile {
+        
+        
+    }
+
     
+
+    .skills {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+    
+
+    .skillIcon {
+        height: 150px;
+        width: 170px;
+        margin: 35px;
+        border: 2px solid purple;
+        border-radius: 25px;
+        color: #fff;
+        box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #5c07ac, 0 0 30px #5c07ac,
+        0 0 40px #2c035a, 0 0 50px #2c035a;
+        
+        animation: shadow 1s infinite alternate;
+        
+    }
+      
+      @keyframes shadow {
+        100% {
+          box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #5c07ac,
+            0 0 70px #2c035a, 0 0 80px #7320e0;
+        }
+      }
+}
+}
+
+
+.skillssm {
+    display: none;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     
 
     @include mobile {
-        display: none;
-    }
-
-    h1 {
+        display: flex;
+        
         
     }
 
@@ -25,33 +69,6 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    
-
-    .skillIcon {
-        height: 150px;
-        width: 170px;
-        border-radius: 15px;
-        margin: 10px;
-        border: 1px solid purple;
-        
-    }
-}
-}
-
-
-.skillssm {
-    display: none;
-    background-color: purple;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    @include mobile {
-        display: flex;
-        background-color: hotpink;
-        
-    }
 
     .skillIconsm {
         height: 150px;
@@ -60,5 +77,5 @@
         margin: 10px;
         
         
-    }
+    }}
 }

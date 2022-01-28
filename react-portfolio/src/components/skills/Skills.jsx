@@ -30,12 +30,13 @@ export default function Skills() {
            <img src={mysql} className="skillIcon" alt="skill Badge" />
            <img src={react} className="skillIcon" alt="skill Badge" />
            <img src={node} className="skillIcon" alt="skill Badge" />
-           <img src={git} className="skillIcon" alt="skill Badge" />
+           
         </div>
         </div>,
 
         <div className="skillssm" id="skillssm">
             <h1>Skills</h1>
+        <div className="skills" id="skills">
         <img src={JSsm} className="skillIconsm" alt="skill Badge" />
         <img src={CSSsm} className="skillIconsm" alt="skill Badge" />
         <img src={HTMLsm} className="skillIconsm" alt="skill Badge" />
@@ -44,6 +45,7 @@ export default function Skills() {
         <img src={mysqlsm} className="skillIconsm" alt="skill Badge" />
         <img src={reactsm} className="skillIconsm" alt="skill Badge" />
         <img src={nodesm} className="skillIconsm" alt="skill Badge" />
+        </div>
         </div>
 ]);
 }

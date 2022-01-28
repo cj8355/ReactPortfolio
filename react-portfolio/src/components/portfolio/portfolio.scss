@@ -46,6 +46,10 @@
         justify-content: center;
         flex-wrap: wrap;
 
+        @include desktop {
+            width: 95%;
+        }
+
         @include mobile {
             width: 100%;
         }
@@ -74,6 +78,8 @@
             h3 {
                 position: absolute;
                 font-size: 20px;
+                color: purple;
+                top: 1px;
             }
 
             img {
@@ -83,13 +89,19 @@
                 z-index: 1;
             }
 
+            .iconContainer {
+                position: absolute;
+                bottom: 3px;
+                right: 3px;
+            }
+
             .video {
                 display: none;
             }
 
             &:hover {
-                transform: scale(1.15);
-                background-color: $mainColor;
+                transform: scale(1.1);
+                
                 
 
                 video {
@@ -100,6 +112,7 @@
                 img {
                     opacity: 0.2;
                     z-index: 0;
+                    display: none;
                 }
             }
         }

@@ -3,37 +3,66 @@
 .intro {
     display: flex;
 
+    
+
     @include mobile {
         flex-direction: column;
         align-items: center;
     }
 
     .left {
-        flex: 0.5;
+        flex: 1;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        @include desktop {
+                width: 70%;
+                align-items: flex-start;
+                flex: 1;
+                justify-content: center;
+                
+        }
+
+        @include mobile {
+            align-items: center;
+            justify-content: space-around;
+            height: 50vh;
+        }
         
         .imgContainer {
-            width: 700px;
-            height: 700px;
-            background-color: crimson;
+            width: 80%;
+            height: 60%;
+            background-color: rgb(230, 64, 97);
             border-radius: 50%;
             display: flex;
             align-items: flex-end;
             justify-content: center;
             float: right;
+            margin-top: 10px;
+            flex-wrap: wrap;
             
 
+            @include desktop {
+                
+                align-items: center;
+                
+        }
+
+
             @include mobile {
-                align-items: flex-start;
+                align-items: center;
+                justify-content: space-around;
+                float: none;
             }
 
             img {
-                height: 90%;
+                height: 85%;
                 //object-fit: cover;
                 //overflow: hidden;
-
+                width: 85%;
                 @include mobile {
-                    height: 50%;
+                    height: 80%;
                 }
             }
         }
@@ -50,6 +79,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            flex-wrap: wrap;
 
             @include mobile {
                 padding-left: 0;
@@ -99,6 +129,8 @@
         a {
             position: absolute;
             bottom: 10px;
+            
+            
 
             .downArrow {
                 width: 40px;
