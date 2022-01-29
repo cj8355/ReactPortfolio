@@ -41,8 +41,11 @@ export const featuredPortfolio = [
     },
     {
         id: 6,
-        title: "Title6",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI9qdhIOHThp8xEaFKtqrD91-LtkpyVz3hYw&usqp=CAU",
+        title: "Pin KO",
+        img: "assets/pinKO.JPG",
+        video: "assets/pinKO2.webm",
+        livesite: "https://mysterious-gorge-30415.herokuapp.com/",
+        repo: "https://github.com/cj8355/PinKO"
     },
 ];
 
