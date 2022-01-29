@@ -83,7 +83,7 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
             <h1>Portfolio</h1>
             <ul>
                 {list.map((item)=> (
-                    <PortfolioList title={item.title} active={selected === item.id}
+                    <PortfolioList title={item.title} active={selected === item.id} key={item.id}
                     setSelected={setSelected}
                     id={item.id}
                     /*video={item.video}*/
@@ -92,7 +92,7 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
             </ul>
             <div className="container">
                 {data.map((d) => (
-                    <div className="item">
+                    <div className="item" key={d.id}>
                     <img src={d.img} alt="" />
                     <h3 style={{ color: darkMode && "white" }}>{d.title}</h3>
                     <div className="iconContainer" >
