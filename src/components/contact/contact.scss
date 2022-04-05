@@ -24,8 +24,15 @@
         align-items: center;
         justify-content: center;
 
+        .itemContainer {
+            display: flex;
+            align-items: center;
+            
+        }
+
         h2 {
             font-size: 30px;
+            margin-bottom: 10px;
         }
 
         form {

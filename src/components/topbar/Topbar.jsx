@@ -13,16 +13,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">Portfolio</a>
-                    <div className="itemContainer">
-                    <Person className="icon"/>
-                        <span>206-765-8990</span>
-
-                    </div>
-                     <div className="itemContainer">
-                       <Mail className="icon"/>
-                        <span>charlescallender.cc@gmail.com</span>
-                        
-                    </div>
+                    
                     <div className="itemContainer">
                     <a href="https://github.com/cj8355" target="_blank"> <GitHub className="gitHubIcon" style={{  color: darkMode && "white" }}/> </a>
                     </div>

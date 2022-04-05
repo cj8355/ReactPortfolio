@@ -2,48 +2,48 @@ export const featuredPortfolio = [
     {
         id: 1,
         title: "Code Quiz",
-        img: "assets/codeQuiz.JPG",
-        video: "assets/codeQuiz.webm",
+        img: "/assets/codeQuiz.JPG",
+        video: "/assets/codeQuiz.webm",
         livesite: "https://cj8355.github.io/Code_Quiz/",
         repo: "https://github.com/cj8355/Code_Quiz"
     },
     {
         id: 2,
         title: "Tech Blog",
-        img: "assets/techBlog.JPG",
-        video: "assets/techBlog.webm",
+        img: "/assets/techBlog.JPG",
+        video: "/assets/techBlog.webm",
         livesite: "https://powerful-retreat-67806.herokuapp.com/",
         repo: "https://github.com/cj8355/Tech-Blog"
     },
     {
         id: 3,
         title: "Fitness Tracker",
-        img: "assets/fitnessTracker.JPG",
-        video: "assets/fitnessTracker.webm",
+        img: "/assets/fitnessTracker.JPG",
+        video: "/assets/fitnessTracker.webm",
         livesite: "https://radiant-atoll-72923.herokuapp.com/",
         repo: "https://github.com/cj8355/Workout-Tracker"
     },
     {
         id: 4,
         title: "Book Search",
-        img: "assets/bookSearch.JPG",
-        video: "assets/googleBookSearch.webm",
+        img: "/assets/bookSearch.JPG",
+        video: "/assets/googleBookSearch.webm",
         livesite: "https://glacial-brushlands-28273.herokuapp.com/",
         repo: "https://github.com/cj8355/Book-Search-Engine"
     },
     {
         id: 5,
         title: "Ecommerce Store(Stripe)",
-        img: "assets/store.JPG",
-        video: "assets/store.webm",
+        img: "/assets/store.JPG",
+        video: "/assets/store.webm",
         livesite: "https://desolate-wildwood-52666.herokuapp.com/",
         repo: "https://github.com/cj8355/Redux-Store"
     },
     {
         id: 6,
         title: "Pin KO",
-        img: "assets/pinKO.JPG",
-        video: "assets/pinKO2.webm",
+        img: "/assets/pinKO.JPG",
+        video: "/assets/pinKO2.webm",
         livesite: "https://mysterious-gorge-30415.herokuapp.com/",
         repo: "https://github.com/cj8355/PinKO"
     },

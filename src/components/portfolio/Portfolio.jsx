@@ -58,7 +58,7 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
     },[selected]);
     
 
-    const handleOnMouseOver = (e: React.MouseEvent<HTMLVideoElement>) => {
+    const handleOnMouseOver = (e) => {
        /* x.style.display = "block";*/
       
         e.target.play();
@@ -67,7 +67,7 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
         
     }
 
-    const handleOnMouseOut = (e: React.MouseEvent<HTMLVideoElement>) => {
+    const handleOnMouseOut = (e) => {
         e.target.pause();
         console.log("Paused.");
         /*x.style.display = "none";*/
@@ -93,7 +93,7 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
             <div className="container">
                 {data.map((d) => (
                     <div className="item" key={d.id}>
-                    <img src={d.img} alt="" />
+                    <img src={process.env.PUBLIC_URL + d.img} alt="" />
                     <h3 style={{ color: darkMode && "white" }}>{d.title}</h3>
                     <div className="iconContainer" >
                                 <a href={d.livesite} target="_blank"> <LanguageOutlinedIcon className="websiteIcon" style={{ color: darkMode && "white" }}/> </a>
@@ -101,7 +101,7 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
                                 </div>
                     {
                     <video className="video" loop preload="none" muted onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}>
-                        <source src={d.video} type="video/webm" />
+                        <source src={process.env.PUBLIC_URL + d.video} type="video/webm" />
                     </video> }
                 </div>
 

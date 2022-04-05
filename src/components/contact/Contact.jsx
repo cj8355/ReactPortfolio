@@ -2,6 +2,7 @@
 import "./contact.scss";
 import * as React from 'react';
 import { useState, useRef, useContext, useEffect } from "react";
+import {Person, Mail, GitHub, LinkedIn} from "@material-ui/icons";
 
 import emailjs from '@emailjs/browser';
 import { ThemeContext } from "../../context";
@@ -82,10 +83,23 @@ export default function Contact() {
     return (
         <div className='contact' id='contact'>
             <div className="left">
-                <img src="assets/shake.svg" alt="" />
+                <img src={process.env.PUBLIC_URL + '/assets/shake.svg'} alt="handshake image" />
             </div>
             <div className="right">
                 <h2>Contact.</h2>
+                <div className="itemContainer">
+                <Person className="icon"/>
+                        <span>206-765-8990</span>
+
+                    </div>
+                     <div className="itemContainer">
+                       <Mail className="icon"/>
+                        <span>charlescallender.cc@gmail.com</span>
+                        
+                    </div>
+                
+
+                    
                 <form onSubmit={handleSubmit}>
                     <input style={{ backgroundColor: darkMode && "black", color: darkMode && "white" }} 
                     type="text" placeholder="Name" name="user_name"   value={ formValues.user_name } onChange={handleChange}/>

@@ -29,13 +29,28 @@
         width: 170px;
         margin: 35px;
         border: 2px solid purple;
+        // background-color: #b4b0b8;
+        object-fit: contain;
+        padding: 15px;
+        
         border-radius: 25px;
         color: #fff;
-        box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #5c07ac, 0 0 30px #5c07ac,
-        0 0 40px #2c035a, 0 0 50px #2c035a;
+        // box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #5c07ac, 0 0 30px #5c07ac,
+        // 0 0 40px #2c035a, 0 0 50px #2c035a;
         
-        animation: shadow 1s infinite alternate;
+        // animation: shadow 1s infinite alternate;
         
+    }
+
+    .skillIcon::before {
+        background-color: #5c07ac;
+        z-index: -100;
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 100%;
+        inset: 0px;
+        mix-blend-mode: screen;
     }
       
       @keyframes shadow {
