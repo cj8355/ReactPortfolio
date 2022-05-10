@@ -28,8 +28,9 @@
         height: 150px;
         width: 170px;
         margin: 35px;
-        border: 2px solid purple;
+        // border: 2px solid purple;
         // background-color: #b4b0b8;
+        // background: linear-gradient(135deg, #2d0052, #7a00de);
         object-fit: contain;
         padding: 15px;
         
@@ -43,8 +44,8 @@
     }
 
     .skillIcon::before {
-        background-color: #5c07ac;
-        z-index: -100;
+        // background-color: #5c07ac;
+       
         content: "";
         position: absolute;
         width: 25px;

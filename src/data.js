@@ -1,4 +1,4 @@
-export const featuredPortfolio = [
+export const webPortfolio = [
     {
         id: 1,
         title: "Disney+",
@@ -49,7 +49,7 @@ export const featuredPortfolio = [
     // },
 ];
 
-export const webPortfolio = [
+export const gamePortfolio = [
     {
         id: 1,
         title: "Title11",

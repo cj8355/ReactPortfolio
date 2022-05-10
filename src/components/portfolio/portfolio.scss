@@ -18,6 +18,9 @@
         padding: 0px;
         list-style: none;
         display: flex;
+        z-index: -1s;
+        margin-bottom: 15px;
+    
 
         @include mobile {
             margin: 5px;
@@ -46,6 +49,7 @@
         justify-content: center;
         flex-wrap: wrap;
         overflow: hidden;
+        position: relative;
         
 
         @include desktop {
@@ -124,21 +128,25 @@
             }
 
             &:hover {
-                transform: scale(1.2);
-                z-index: 10002;
-                overflow-y: visible;
+                transform: scale(1.3);
+                overflow: hidden;
+                z-index: 1000;
                 
 
                 video {
                     opacity: 100;
                     display: block;
-                    z-index: 10002;
+                    
                 }
 
                 img {
                     opacity: 0.2;
                     z-index: 0;
                     display: none;
+                }
+
+                .iconContainer {
+                    z-index: 10001;
                 }
             }
         }

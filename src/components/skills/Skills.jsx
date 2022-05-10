@@ -24,8 +24,24 @@ import jsLogo from "./skillsIcons/js-logo.svg"
 import mongodbLogo from "./skillsIcons/mongodb-logo.svg"
 import mysqlLogo from "./skillsIcons/mysql-logo.svg"
 import nodeLogo from "./skillsIcons/nodejs-logo.svg"
+import expressLogo from "./skillsIcons/express-svgrepo-com.svg"
+import insomniaLogo from "./skillsIcons/insomnia-svgrepo-com.svg"
+import materialUiLogo from "./skillsIcons/material-ui-svgrepo-com.svg"
+import npmLogo from "./skillsIcons/npm-svgrepo-com.svg"
+import reactSvgLogo from "./skillsIcons/react-svgrepo-com.svg"
+import sassLogo from "./skillsIcons/sass-svgrepo-com.svg"
+import styledComponentsLogo from "./skillsIcons/styled-components-1.svg"
+
+import { useContext, useState } from "react";
+import { ThemeContext } from "../../context";
+import { Gradient } from "@material-ui/icons"
+
 
 export default function Skills() {
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
+
+
     return ([
         <div className="skillsContainer">
         <h1>Some of the technologies I've worked with</h1>
@@ -33,18 +49,25 @@ export default function Skills() {
            {/* <img src={JS} className="skillIcon" alt="skill Badge" />
            <img src={CSS} className="skillIcon" alt="skill Badge" />
            <img src={HTML} className="skillIcon" alt="skill Badge" /> */}
-           <img src={express} className="skillIcon" alt="skill Badge" />
+           {/* <img src={express} className="skillIcon" alt="skill Badge" /> */}
            {/* <img src={mongo} className="skillIcon" alt="skill Badge" />
            <img src={mysql} className="skillIcon" alt="skill Badge" />
            <img src={react} className="skillIcon" alt="skill Badge" />
            <img src={node} className="skillIcon" alt="skill Badge" />
            <img src={reactLogo} className="skillIcon" alt="skill Badge" /> */}
-           <img src={cssLogo} className="skillIcon" alt="skill Badge" />
-           <img src={htmlLogo} className="skillIcon" alt="skill Badge" />
-           <img src={jsLogo} className="skillIcon" alt="skill Badge" />
-           <img src={mongodbLogo} className="skillIcon" alt="skill Badge" />
-           <img src={mysqlLogo} className="skillIcon" alt="skill Badge" />
-           <img src={nodeLogo} className="skillIcon" alt="skill Badge" />
+           <img src={cssLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white"}}/>
+           <img src={htmlLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={jsLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={mongodbLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={mysqlLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={nodeLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={expressLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={insomniaLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={materialUiLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={npmLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={reactSvgLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={sassLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
+           <img src={styledComponentsLogo} className="skillIcon" alt="skill Badge" style={{ backgroundColor: darkMode && "white" }}/>
            
         </div>
         </div>,

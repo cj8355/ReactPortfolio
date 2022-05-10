@@ -34,11 +34,11 @@ function App() {
       
       <div className="sections">
         <Intro />
-        
+      
         <Portfolio />
         <Works />
         <Skills />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
         
       </div>

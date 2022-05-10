@@ -2,7 +2,7 @@ import "./portfolio.scss";
 import * as React from 'react';
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useState, useEffect, useRef, useContext } from "react";
-import { featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio, contentPortfolio } from "../../data";
+import {  webPortfolio, mobilePortfolio, gamePortfolio, contentPortfolio } from "../../data";
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { ThemeContext } from "../../context";
@@ -17,10 +17,7 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
    
 
     const list = [
-        {
-            id: "featured",
-            title: "Featured",
-        },
+        
         {
             id: "web",
             title: "Web App",
@@ -30,8 +27,8 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
             title: "Mobile App",
         },
         {
-            id: "design",
-            title: "Design",
+            id: "game",
+            title: "Games",
         },
         {
             id: "content",
@@ -42,17 +39,15 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
     useEffect(() => {
 
         switch(selected) {
-            case "featured": setData(featuredPortfolio);
-            break;
             case "web": setData(webPortfolio);
             break;
             case "mobile": setData(mobilePortfolio);
             break;
-            case "design": setData(designPortfolio);
+            case "game": setData(gamePortfolio);
             break;
             case "content": setData(contentPortfolio);
             break;
-            default: setData(featuredPortfolio);
+            default: setData(webPortfolio);
         }
 
     },[selected]);
