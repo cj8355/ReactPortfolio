@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/ReactPortfolio/static/css/main.98034867.css",
-    "main.js": "/ReactPortfolio/static/js/main.ed1de05d.js",
+    "main.css": "/ReactPortfolio/static/css/main.122fb5c0.css",
+    "main.js": "/ReactPortfolio/static/js/main.bbe700bc.js",
+    "static/media/react-transparent.png": "/ReactPortfolio/static/media/react-transparent.2afe8019efe53a8eff12.png",
     "static/media/Resume 11.16.2021.pdf": "/ReactPortfolio/static/media/Resume 11.16.2021.ae0907c72d2f295b7d87.pdf",
     "static/media/htmlsm.jpg": "/ReactPortfolio/static/media/htmlsm.b597af8ea458cbfae006.jpg",
     "static/media/mysqlsm.jpg": "/ReactPortfolio/static/media/mysqlsm.76a0e89bdbc4b2e8aaf7.jpg",
@@ -11,12 +12,19 @@
     "static/media/mongosm.jpg": "/ReactPortfolio/static/media/mongosm.0ae4b8d5d9c917054c66.jpg",
     "static/media/csssm.png": "/ReactPortfolio/static/media/csssm.ca6291b925b826f22100.png",
     "static/media/expresssm.jpg": "/ReactPortfolio/static/media/expresssm.e42db0b0a371c27ca03e.jpg",
+    "static/media/mongodb-logo.svg": "/ReactPortfolio/static/media/mongodb-logo.3f7df0065a9e79688a79eeff71f69050.svg",
+    "static/media/mysql-logo.svg": "/ReactPortfolio/static/media/mysql-logo.6d1d0cfef1c297d603e8e0af59dede27.svg",
+    "static/media/react-logo.svg": "/ReactPortfolio/static/media/react-logo.4f7abcc3a4d5c559d9eb61b5f2dd5a87.svg",
+    "static/media/nodejs-logo.svg": "/ReactPortfolio/static/media/nodejs-logo.6e615d3ef0b5afa070caa165450af385.svg",
+    "static/media/css-logo.svg": "/ReactPortfolio/static/media/css-logo.49d5cb0d396ac5742036e0c8d9c46e2f.svg",
+    "static/media/html-logo.svg": "/ReactPortfolio/static/media/html-logo.452830083655a1352b4c115058477277.svg",
+    "static/media/js-logo.svg": "/ReactPortfolio/static/media/js-logo.9abe85eb93cd836727516ec7cf563424.svg",
     "index.html": "/ReactPortfolio/index.html",
-    "main.98034867.css.map": "/ReactPortfolio/static/css/main.98034867.css.map",
-    "main.ed1de05d.js.map": "/ReactPortfolio/static/js/main.ed1de05d.js.map"
+    "main.122fb5c0.css.map": "/ReactPortfolio/static/css/main.122fb5c0.css.map",
+    "main.bbe700bc.js.map": "/ReactPortfolio/static/js/main.bbe700bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.98034867.css",
-    "static/js/main.ed1de05d.js"
+    "static/css/main.122fb5c0.css",
+    "static/js/main.bbe700bc.js"
   ]
 }
