@@ -1,52 +1,52 @@
 export const featuredPortfolio = [
     {
         id: 1,
-        title: "Code Quiz",
-        img: "/assets/codeQuiz.JPG",
-        video: "/assets/codeQuiz.webm",
-        livesite: "https://cj8355.github.io/Code_Quiz/",
-        repo: "https://github.com/cj8355/Code_Quiz"
+        title: "Disney+",
+        img: "/assets/disneyPlus.png",
+        video: "/assets/Disney+.webm",
+        livesite: "https://disney-plus-e9bb6.web.app/", 
+        repo: "https://github.com/cj8355/Disney_Plus"
     },
     {
         id: 2,
-        title: "Tech Blog",
-        img: "/assets/techBlog.JPG",
-        video: "/assets/techBlog.webm",
-        livesite: "https://powerful-retreat-67806.herokuapp.com/",
-        repo: "https://github.com/cj8355/Tech-Blog"
+        title: "Amazon",
+        img: "/assets/amazon.png",
+        video: "/assets/Amazon.com.webm",
+        livesite: "https://clone-ac73b.web.app/",
+        repo: "https://github.com/cj8355/Amazon-Clone"
     },
     {
         id: 3,
-        title: "Fitness Tracker",
-        img: "/assets/fitnessTracker.JPG",
-        video: "/assets/fitnessTracker.webm",
-        livesite: "https://radiant-atoll-72923.herokuapp.com/",
-        repo: "https://github.com/cj8355/Workout-Tracker"
+        title: "LinkedIn",
+        img: "/assets/linkedInsc.png",
+        video: "/assets/linkedIn.webm",
+        livesite: "https://linkedin-clone-e988b.web.app/home",
+        repo: "https://github.com/cj8355/LinkedIn_Clone"
     },
     {
         id: 4,
-        title: "Book Search",
-        img: "/assets/bookSearch.JPG",
-        video: "/assets/googleBookSearch.webm",
-        livesite: "https://glacial-brushlands-28273.herokuapp.com/",
-        repo: "https://github.com/cj8355/Book-Search-Engine"
+        title: "CryptoPunk",
+        img: "/assets/cryptoPunk.png",
+        video: "/assets/cryptoPunk.webm",
+        livesite: "https://linkedin-clone-e988b.web.app",
+        repo: "https://github.com/cj8355/Cryptopunk-Clone"
     },
     {
         id: 5,
-        title: "Ecommerce Store(Stripe)",
-        img: "/assets/store.JPG",
-        video: "/assets/store.webm",
+        title: "Travel Map",
+        img: "/assets/travelMap.png",
+        video: "/assets/travelPinApp.webm",
         livesite: "https://desolate-wildwood-52666.herokuapp.com/",
-        repo: "https://github.com/cj8355/Redux-Store"
+        repo: "https://github.com/cj8355/Travel-Map-App"
     },
-    {
-        id: 6,
-        title: "Pin KO",
-        img: "/assets/pinKO.JPG",
-        video: "/assets/pinKO2.webm",
-        livesite: "https://mysterious-gorge-30415.herokuapp.com/",
-        repo: "https://github.com/cj8355/PinKO"
-    },
+    // {
+    //     id: 6,
+    //     title: "Pin KO",
+    //     img: "/assets/pinKO.JPG",
+    //     video: "/assets/pinKO2.webm",
+    //     livesite: "https://mysterious-gorge-30415.herokuapp.com/",
+    //     repo: "https://github.com/cj8355/PinKO"
+    // },
 ];
 
 export const webPortfolio = [

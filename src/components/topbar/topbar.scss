@@ -33,6 +33,9 @@
                 align-items: center;
                 margin-left: 30px;
                 
+                a {
+                    text-decoration: none;
+                }
 
                 @include mobile {
                     display: none;
@@ -51,6 +54,8 @@
                 .gitHubIcon {
                     width: 30px;
                     height: 30px;
+                    text-decoration: none;
+                    color: purple;
 
                     &:hover {
                         background-color: rgba(207, 211, 212, 0.7);
@@ -62,6 +67,7 @@
                 .linkedInIcon {
                     width: 30px;
                     height: 30px;
+                    color: purple;
 
                     &:hover {
                         background-color: rgba(207, 211, 212, 0.7);
@@ -73,11 +79,14 @@
                 .pinterestIcon {
                     width: 30px;
                     height: 30px;
+                    text-decoration: none;
+                    color: purple;
 
                     &:hover {
                         background-color: rgba(207, 211, 212, 0.7);
                         padding: 3px;
                         border-radius: 5px;
+                        
                     }
                 }
             }
