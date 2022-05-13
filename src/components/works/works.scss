@@ -151,6 +151,10 @@
                                 color: white;
                                 height: 30px;
                                 width: 30px;
+
+                                &:hover {
+                                    color: rgb(197, 196, 196);
+                                }
                             }
 
                             .gitHubIcon {
@@ -158,6 +162,9 @@
                                 height: 30px;
                                 width: 30px;
 
+                                &:hover {
+                                    color: rgb(197, 196, 196);
+                                }
                             }
 
                         }
@@ -215,7 +222,7 @@
 
                     img {
                         width: 400px;
-                        transform: rotate(-10deg);
+                        // transform: rotate(-10deg);
                     }
                 
                 }

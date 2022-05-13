@@ -15,33 +15,33 @@ export default function Works() {
     const data = [
         {
             id: "1",
-            icon: "assets/mobile.png",
-            title: "Code Quiz",
-            desc: "Code quiz application where users tet their coding knowledge.",
-            img: "assets/codeQuiz.JPG",
+            icon: "assets/globe.png",
+            title: "Retroland",
+            desc: "",
+            img: "assets/construction.JPG",
             livesite: "https://cj8355.github.io/Code_Quiz/",
             repo: "https://github.com/cj8355/Code_Quiz",
-            techUsed: [ "HTML", "CSS", "JS"]
+            techUsed: [ "three.js", ]
         },
         {
             id: "2",
-            icon: "assets/mobile.png",
-            title: "Tech Blog",
-            desc: "Tech Blog application using node, express and mongo",
-            img: "assets/techBlog.JPG",
+            icon: "assets/globe.png",
+            title: "Travel Map",
+            desc: "Travel map app that lets users leave reviews of places they've been using pins on the map",
+            img: "assets/travelMap.png",
             livesite: "https://powerful-retreat-67806.herokuapp.com/",
             repo: "https://github.com/cj8355/Tech-Blog",
-            techUsed: [ "MongoDb", "Express", "Node"]
+            techUsed: [ "React", "React Map GL", "MongoDb", "Node", "Express", "Material UI"]
         },
         {
             id: "3",
             icon: "assets/globe.png",
-            title: "Google Book Search",
-            desc: "Book search application using Google Book API",
-            img: "assets/bookSearch.JPG",
+            title: "Disney+",
+            desc: "Disney+ clone that allows users to login and watch shows/movies",
+            img: "assets/disneyPlus.png",
             livesite: "https://radiant-atoll-72923.herokuapp.com/stats",
             repo: "https://github.com/cj8355/Book-Search-Engine",
-            techUsed: [ "React", "Express", "Node", "MongoDb", "RRRR"]
+            techUsed: [ "React", "React Router", "React Player", "Styled Components", "Firebase"]
         },
     ];
 
