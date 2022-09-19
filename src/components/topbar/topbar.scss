@@ -31,7 +31,7 @@
             .itemContainer {
                 display: flex;
                 align-items: center;
-                margin-left: 30px;
+                margin: 0px 10px;
                 
                 a {
                     text-decoration: none;
@@ -55,7 +55,8 @@
                     width: 30px;
                     height: 30px;
                     text-decoration: none;
-                    color: purple;
+                    padding: 3px;
+                    border-radius: 10px;
 
                     &:hover {
                         background-color: rgba(207, 211, 212, 0.7);
@@ -67,7 +68,8 @@
                 .linkedInIcon {
                     width: 30px;
                     height: 30px;
-                    color: purple;
+                    padding: 3px;
+                    border-radius: 10px;
 
                     &:hover {
                         background-color: rgba(207, 211, 212, 0.7);
@@ -80,7 +82,57 @@
                     width: 30px;
                     height: 30px;
                     text-decoration: none;
-                    color: purple;
+
+                    &:hover {
+                        background-color: rgba(207, 211, 212, 0.7);
+                        padding: 3px;
+                        border-radius: 5px;
+                        
+                    }
+                }
+
+                .tableauIcon {
+                    width: 30px;
+                    height: 30px;
+                    text-decoration: none;
+                    fill: purple;
+                    stroke: black;
+                    padding: 3px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background-color: rgba(207, 211, 212, 0.7);
+                        padding: 3px;
+                        border-radius: 5px;
+                        
+                    }
+                }
+
+                .excelIcon {
+                    width: 30px;
+                    height: 30px;
+                    text-decoration: none;
+                    fill: purple;
+                    stroke: black;
+                    padding: 3px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background-color: rgba(207, 211, 212, 0.7);
+                        padding: 3px;
+                        border-radius: 5px;
+                        
+                    }
+                }
+
+                .mysqlIcon {
+                    width: 30px;
+                    height: 30px;
+                    text-decoration: none;
+                    fill: purple;
+                    stroke: black;
+                    padding: 3px;
+                    border-radius: 10px;
 
                     &:hover {
                         background-color: rgba(207, 211, 212, 0.7);

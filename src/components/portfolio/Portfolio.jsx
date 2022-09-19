@@ -22,18 +22,18 @@ export default function Portfolio({videoDisplay, setVideoDisplay}) {
             id: "web",
             title: "Web App",
         },
-        {
-            id: "mobile",
-            title: "Mobile App",
-        },
-        {
-            id: "game",
-            title: "Games",
-        },
-        {
-            id: "content",
-            title: "Content",
-        },
+        // {
+        //     id: "mobile",
+        //     title: "Mobile App",
+        // },
+        // {
+        //     id: "game",
+        //     title: "Games",
+        // },
+        // {
+        //     id: "content",
+        //     title: "Content",
+        // },
     ];
 
     useEffect(() => {

@@ -29,7 +29,7 @@ export default function Works() {
             title: "Travel Map",
             desc: "Travel map app that lets users leave reviews of places they've been using pins on the map",
             img: "assets/travelMap.png",
-            livesite: "https://powerful-retreat-67806.herokuapp.com/",
+            livesite: "https://cj8355.github.io/Travel-Map-App/",
             repo: "https://github.com/cj8355/Tech-Blog",
             techUsed: [ "React", "React Map GL", "MongoDb", "Node", "Express", "Material UI"]
         },
@@ -39,7 +39,7 @@ export default function Works() {
             title: "Disney+",
             desc: "Disney+ clone that allows users to login and watch shows/movies",
             img: "assets/disneyPlus.png",
-            livesite: "https://radiant-atoll-72923.herokuapp.com/stats",
+            livesite: "https://disney-plus-e9bb6.web.app/",
             repo: "https://github.com/cj8355/Book-Search-Engine",
             techUsed: [ "React", "React Router", "React Player", "Styled Components", "Firebase"]
         },
