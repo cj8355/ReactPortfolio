@@ -26,10 +26,10 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     <a href="https://www.linkedin.com/in/charles-callender-043b3886/" target="_blank"> <LinkedInIcon className="linkedInIcon" style={{  backgroundColor: darkMode && "white" }}/> </a>
                     </div>
                     <div className="itemContainer">
-                    <a href="https://pin.it/uCUV3xD" target="_blank"> <ExcelIcon className="excelIcon" style={{  backgroundColor: darkMode && "white" }}/> </a>
+                    <a href="https://cj8355.github.io/ExcelProjects/" target="_blank"> <ExcelIcon className="excelIcon" style={{  backgroundColor: darkMode && "white" }}/> </a>
                     </div>
                     <div className="itemContainer">
-                    <a href="https://pin.it/uCUV3xD" target="_blank"> <MySqlIcon className="mysqlIcon" style={{  backgroundColor: darkMode && "white" }}/> </a>
+                    <a href="https://cj8355.github.io/SqlProjects/" target="_blank"> <MySqlIcon className="mysqlIcon" style={{  backgroundColor: darkMode && "white" }}/> </a>
                     </div>
                     <div className="itemContainer">
                     <a href="https://public.tableau.com/app/profile/charles7048" target="_blank"> <TableauIcon className="tableauIcon" style={{  backgroundColor: darkMode && "white" }} /> </a>
