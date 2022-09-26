@@ -36,7 +36,7 @@ export const webPortfolio = [
         title: "Travel Map",
         img: "/assets/travelMap.png",
         video: "/assets/travelPinApp.webm",
-        livesite: "https://desolate-wildwood-52666.herokuapp.com/",
+        livesite: "https://cj8355.github.io/Travel-Map-App/",
         repo: "https://github.com/cj8355/Travel-Map-App"
     },
     // {

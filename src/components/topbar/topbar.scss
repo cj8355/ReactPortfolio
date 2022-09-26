@@ -10,15 +10,30 @@
     z-index: 3;
     transition: all 1s ease;
 
+    @include mobile {
+         height: 13%;
+    }
+
     .wrapper {
         padding: 10px 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
+        @include mobile {
+            padding: 5px;
+        }
+
         .left {
             display: flex;
             align-items: center;
+
+            @include mobile {
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: start;
+                width: 90%;
+            }
 
             .logo {
                 font-size: 30px;
@@ -26,6 +41,11 @@
                 text-decoration: none;
                 color: inherit;
                 margin-right: 40px;
+
+                @include mobile {
+                    margin-right: 50%;
+                    overflow-y: visible;
+                }
             }
 
             .itemContainer {
@@ -38,7 +58,7 @@
                 }
 
                 @include mobile {
-                    display: none;
+                    flex-direction: row;
                 }
 
                 .icon {

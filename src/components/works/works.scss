@@ -56,7 +56,7 @@
         }
 
         @include mobile {
-            height: 55%;
+            height: 75%;
             
         }
 
@@ -175,6 +175,9 @@
                             flex-wrap: wrap;
                             padding-inline-start: 0;
                             
+                            @include mobile {
+                                overflow: hidden;
+                            }
                             
 
                             li {
