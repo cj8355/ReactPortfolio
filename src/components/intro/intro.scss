@@ -57,10 +57,11 @@
             }
 
             img {
-                height: 85%;
+                height: 75%;
                 //object-fit: cover;
                 //overflow: hidden;
-                width: 85%;
+                width: 70%;
+                margin-bottom: 12%;
                 @include mobile {
                     height: 80%;
                 }

@@ -24,7 +24,11 @@ export default function Intro() {
         <div className='intro' id='intro'>
             <div className="left">
                 <div className="imgContainer">
-                    <img src={process.env.PUBLIC_URL + '/assets/avatar-svg.svg'} alt="" />
+                    <img src={process.env.PUBLIC_URL + '/assets/chess1.svg'} alt="">
+                    
+			
+	
+                    </img>
                 </div>
             </div>
             <div className="right">
