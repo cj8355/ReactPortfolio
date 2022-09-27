@@ -1,5 +1,5 @@
 import "./menu.scss";
-import Resume from "../../Documents/Resume 11.16.2021.pdf";
+import Resume from "../../Documents/Resume 9.26.2022 short.pdf";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
     return (
