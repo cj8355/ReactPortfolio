@@ -1,5 +1,6 @@
 import "./menu.scss";
 import Resume from "../../Documents/Resume 9.26.2022 short.pdf";
+import AWSCCP from "../../Documents/AWS CCP.pdf";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
     return (
@@ -25,6 +26,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
                     <a href={Resume} target="_blank">Resume</a>
+                </li>
+                <li onClick={()=>setMenuOpen(false)}>
+                    <a href={AWSCCP} target="_blank">AWS CCP</a>
                 </li>
             </ul>
         
