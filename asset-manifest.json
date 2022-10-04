@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactPortfolio/static/css/main.619652dc.css",
-    "main.js": "/ReactPortfolio/static/js/main.14a94855.js",
+    "main.js": "/ReactPortfolio/static/js/main.36b5f06d.js",
     "static/media/react-transparent.png": "/ReactPortfolio/static/media/react-transparent.2afe8019efe53a8eff12.png",
     "static/media/Resume 9.26.2022 short.pdf": "/ReactPortfolio/static/media/Resume 9.26.2022 short.25221e0f98b18ef11c8c.pdf",
     "static/media/AWS CCP.pdf": "/ReactPortfolio/static/media/AWS CCP.ce00d9a8bac63fa1655f.pdf",
@@ -34,10 +34,10 @@
     "index.html": "/ReactPortfolio/index.html",
     "static/media/npm-svgrepo-com.svg": "/ReactPortfolio/static/media/npm-svgrepo-com.a9fea0de778122adc2ffa5d24eedef20.svg",
     "main.619652dc.css.map": "/ReactPortfolio/static/css/main.619652dc.css.map",
-    "main.14a94855.js.map": "/ReactPortfolio/static/js/main.14a94855.js.map"
+    "main.36b5f06d.js.map": "/ReactPortfolio/static/js/main.36b5f06d.js.map"
   },
   "entrypoints": [
     "static/css/main.619652dc.css",
-    "static/js/main.14a94855.js"
+    "static/js/main.36b5f06d.js"
   ]
 }
