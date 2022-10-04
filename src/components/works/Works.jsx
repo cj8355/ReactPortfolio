@@ -17,11 +17,11 @@ export default function Works() {
             id: "1",
             icon: "assets/globe.png",
             title: "Retroland",
-            desc: "",
-            img: "assets/construction.JPG",
-            livesite: "https://cj8355.github.io/Code_Quiz/",
-            repo: "https://github.com/cj8355/Code_Quiz",
-            techUsed: [ "three.js", ]
+            desc: "Arcade app that allows users to play Space Invaders",
+            img: "assets/retroland.png",
+            livesite: "http://cj8355.github.io/RetroLand",
+            repo: "https://github.com/cj8355/RetroLand",
+            techUsed: [ "React", "Styled Components", "Firebase", "Material UI"]
         },
         {
             id: "2",
@@ -40,7 +40,7 @@ export default function Works() {
             desc: "Disney+ clone that allows users to login and watch shows/movies",
             img: "assets/disneyPlus.png",
             livesite: "https://disney-plus-e9bb6.web.app/",
-            repo: "https://github.com/cj8355/Book-Search-Engine",
+            repo: "https://github.com/cj8355/Disney_Plus",
             techUsed: [ "React", "React Router", "React Player", "Styled Components", "Firebase"]
         },
     ];
