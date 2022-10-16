@@ -2,7 +2,9 @@
 
 .intro {
     display: flex;
-
+    ::-webkit-scrollbar {
+        display: none;
+      }
     
 
     @include mobile {
@@ -31,22 +33,29 @@
         }
         
         .imgContainer {
-            width: 80%;
-            height: 60%;
-            background-color: rgb(230, 64, 97);
-            border-radius: 50%;
+            width: 70%;
+            height: 70%;
+            background-color: rgb(210, 64, 97);
+            border-radius: 15%;
             display: flex;
-            align-items: flex-end;
+            align-items: center;
             justify-content: center;
-            float: right;
+            // float: right;
             margin-top: 10px;
             flex-wrap: wrap;
+            overflow: hidden;
             
-
             @include desktop {
                 
                 align-items: center;
                 
+        }
+        element.style {
+            margin: 0px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
 
@@ -58,15 +67,45 @@
 
             img {
                 height: 75%;
-                //object-fit: cover;
-                //overflow: hidden;
+                object-fit: cover;
+                overflow: hidden;
                 width: 70%;
-                margin-bottom: 12%;
+                display: flex;
+                margin: 0;
+                // margin-bottom: 12%;
                 @include mobile {
                     height: 80%;
                 }
+
+                
             }
-        }
+
+            #document {
+                display: flex;
+        align-items: center;
+        justify-content: center;
+            }
+
+        
+            .video1 {
+                width: 100%;
+                height: 100%;
+                padding: 5%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                overflow: hidden;
+                margin: 0;
+                
+                
+                
+                @include mobile {
+                    height: 80%;
+                }
+
+            }
+            }
     }
 
     .right {
@@ -146,5 +185,5 @@
                 }
             }
         }
-    }
+    }     
 }
