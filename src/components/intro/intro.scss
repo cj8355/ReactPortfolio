@@ -35,7 +35,7 @@
         .imgContainer {
             width: 70%;
             height: 70%;
-            background-color: rgb(210, 64, 97);
+            background-color: #27282c;
             border-radius: 15%;
             display: flex;
             align-items: center;
@@ -43,7 +43,8 @@
             // float: right;
             margin-top: 10px;
             flex-wrap: wrap;
-            overflow: hidden;
+            // overflow: hidden;
+            box-sizing: border-box;
             
             @include desktop {
                 
@@ -67,8 +68,8 @@
 
             img {
                 height: 75%;
-                object-fit: cover;
-                overflow: hidden;
+                // object-fit: cover;
+                // overflow: hidden;
                 width: 70%;
                 display: flex;
                 margin: 0;
@@ -105,6 +106,190 @@
                 }
 
             }
+
+            .nextBtn {
+                background: #27282c;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1.5em;
+                letter-spacing: .1em;
+                padding: 10px 25px;
+                transition: 0.5s;
+                color: white;
+                margin-top: 25px;
+                font-weight: 550;
+                position: relative;
+                border: 2px solid #4a4a4a;
+                margin-right: 30px;
+                
+                
+
+                &:hover {
+                    letter-spacing: 0.25em;
+                    // background: purple;
+                    box-shadow: 0 0 35px purple;
+                    color: purple;
+                    border: 2px solid purple;
+
+                    i::before {
+                        left: 0%;
+                        transform: translateX(-50%) rotate(45deg);
+                        box-shadow: 40px 39px purple;
+                    }
+
+                    i::after {
+                        left: 100%;
+                        transform: translateX(-50%) rotate(-45deg);
+                        box-shadow: 38px -39px purple;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: 2px;
+                    background: #27282c;
+                }
+
+                span {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                i {
+                    position: absolute;
+                    inset: 0;
+                    display: block;
+                    // height: 100%;
+                    // width: 100%;
+                    
+                }
+
+                i::before {
+                    content: "";
+                    position: absolute;
+                    left: 100%;
+                    top: -6px;
+                    width: 10px;
+                    height: 10px;
+                    background: #27282c;
+                    border: 2px solid purple;
+                    display: block;
+                    z-index: 10;
+                    transform: translateX(-50%);
+                    transition: 0.5s;
+                }
+
+                i::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -6px;
+                    width: 10px;
+                    height: 10px;
+                    background: #27282c;
+                    border: 2px solid purple;
+                    display: block;
+                    z-index: 10;
+                    transform: translateX(-50%);
+                    transition: 0.5s;
+                }
+
+                
+                
+            }
+
+
+            .prevBtn {
+
+                background: #27282c;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1.5em;
+                letter-spacing: .1em;
+                padding: 10px 25px;
+                transition: 0.5s;
+                color: white;
+                margin-top: 25px;
+                font-weight: 550;
+                position: relative;
+                border: 2px solid #4a4a4a;
+                margin-right: 30px;
+                
+                
+
+                &:hover {
+                    letter-spacing: 0.25em;
+                    // background: purple;
+                    box-shadow: 0 0 35px blue;
+                    color: blue;
+                    border: 2px solid blue;
+
+                    i::before {
+                        left: 0%;
+                        transform: translateX(-50%) rotate(45deg);
+                        box-shadow: 40px 39px blue;
+                    }
+
+                    i::after {
+                        left: 100%;
+                        transform: translateX(-50%) rotate(-45deg);
+                        box-shadow: 38px -39px blue;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: 2px;
+                    background: #27282c;
+                }
+
+                span {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                i {
+                    position: absolute;
+                    inset: 0;
+                    display: block;
+                    // height: 100%;
+                    // width: 100%;
+                    
+                }
+
+                i::before {
+                    content: "";
+                    position: absolute;
+                    left: 100%;
+                    top: -6px;
+                    width: 10px;
+                    height: 10px;
+                    background: #27282c;
+                    border: 2px solid blue;
+                    display: block;
+                    z-index: 10;
+                    transform: translateX(-50%);
+                    transition: 0.5s;
+                }
+
+                i::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -6px;
+                    width: 10px;
+                    height: 10px;
+                    background: #27282c;
+                    border: 2px solid blue;
+                    display: block;
+                    z-index: 10;
+                    transform: translateX(-50%);
+                    transition: 0.5s;
+                }
+            }
+
             }
     }
 

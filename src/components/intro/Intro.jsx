@@ -67,14 +67,20 @@ export default function Intro() {
         <div className='intro' id='intro'>
             <div className="left">
                 <div className="imgContainer">
-                <button
+                <button className="nextBtn"
                 type="button"
                 onClick={nextVid}
-            >Next</button>
-            <button
+            >
+                <span>Next</span>
+                <i></i>
+                </button>
+            <button className="prevBtn"
                 type="button"
                 onClick={prevVid}
-            >Prev</button>
+            >
+                <span>Prev</span>
+                <i></i>
+                </button>
                     {/* <img src={process.env.PUBLIC_URL + '/assets/chess1.svg'} alt="">
                     
 			
