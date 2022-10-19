@@ -67,20 +67,21 @@ export default function Intro() {
         <div className='intro' id='intro'>
             <div className="left">
                 <div className="imgContainer">
-                <button className="nextBtn"
-                type="button"
+                    
+                <div className="nextBtn"
+                
                 onClick={nextVid}
             >
                 <span>Next</span>
                 <i></i>
-                </button>
-            <button className="prevBtn"
-                type="button"
+                </div>
+            <div className="prevBtn"
+                
                 onClick={prevVid}
             >
                 <span>Prev</span>
                 <i></i>
-                </button>
+                </div>
                     {/* <img src={process.env.PUBLIC_URL + '/assets/chess1.svg'} alt="">
                     
 			
@@ -101,6 +102,7 @@ export default function Intro() {
                         />
                         </div> */}
                         {myGifs[gifNumber]}
+                
                 </div>
             </div>
             <div className="right">

@@ -2,6 +2,7 @@
 
 .intro {
     display: flex;
+    box-sizing: border-box;
     ::-webkit-scrollbar {
         display: none;
       }
@@ -35,8 +36,8 @@
         .imgContainer {
             width: 70%;
             height: 70%;
-            background-color: #27282c;
-            border-radius: 15%;
+            background: rgba(0, 0, 0, 0.75);
+            border-radius: 25px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -45,12 +46,48 @@
             flex-wrap: wrap;
             // overflow: hidden;
             box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+
             
             @include desktop {
                 
                 align-items: center;
                 
         }
+
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     width: 120%;
+        //     height: 120%;
+        //     background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+        //     animation: animate 4s linear infinite;
+            
+            
+        // }
+
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     width: 120%;
+        //     height: 120%;
+        //     background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
+        //     animation: animate 4s linear infinite;
+        //     animation-delay: -2s;
+        //     background-clip: content-box;
+        // }
+
+        // @keyframes animate {
+        //     0% {
+        //         transform: rotate(0deg);
+        //     }
+        //     100% {
+        //         transform: rotate(360deg);
+        //     }
+        // }
+
+
         element.style {
             margin: 0px;
             height: 100%;
@@ -66,20 +103,20 @@
                 float: none;
             }
 
-            img {
-                height: 75%;
-                // object-fit: cover;
-                // overflow: hidden;
-                width: 70%;
-                display: flex;
-                margin: 0;
-                // margin-bottom: 12%;
-                @include mobile {
-                    height: 80%;
-                }
+            // img {
+            //     height: 75%;
+            //     // object-fit: cover;
+            //     // overflow: hidden;
+            //     width: 70%;
+            //     display: flex;
+            //     margin: 0;
+            //     // margin-bottom: 12%;
+            //     @include mobile {
+            //         height: 80%;
+            //     }
 
                 
-            }
+            // }
 
             #document {
                 display: flex;
@@ -98,7 +135,7 @@
                 border: none;
                 overflow: hidden;
                 margin: 0;
-                
+                z-index: 3;
                 
                 
                 @include mobile {
@@ -121,8 +158,9 @@
                 position: relative;
                 border: 2px solid #4a4a4a;
                 margin-right: 30px;
-                
-                
+                z-index: 3;
+                overflow: visible;
+                cursor: pointer;
 
                 &:hover {
                     letter-spacing: 0.25em;
@@ -134,13 +172,14 @@
                     i::before {
                         left: 0%;
                         transform: translateX(-50%) rotate(45deg);
-                        box-shadow: 40px 39px purple;
+                        box-shadow: 35px 35px purple;
                     }
 
                     i::after {
                         left: 100%;
                         transform: translateX(-50%) rotate(-45deg);
-                        box-shadow: 38px -39px purple;
+                        box-shadow: 35px -35px purple;
+                        
                     }
                 }
 
@@ -157,7 +196,7 @@
                 }
 
                 i {
-                    position: absolute;
+                    // position: absolute;
                     inset: 0;
                     display: block;
                     // height: 100%;
@@ -178,6 +217,7 @@
                     z-index: 10;
                     transform: translateX(-50%);
                     transition: 0.5s;
+                    
                 }
 
                 i::after {
@@ -193,6 +233,7 @@
                     z-index: 10;
                     transform: translateX(-50%);
                     transition: 0.5s;
+                    
                 }
 
                 
@@ -215,8 +256,9 @@
                 position: relative;
                 border: 2px solid #4a4a4a;
                 margin-right: 30px;
-                
-                
+                z-index: 3;
+                overflow: visible;
+                cursor: pointer;
 
                 &:hover {
                     letter-spacing: 0.25em;
@@ -228,13 +270,14 @@
                     i::before {
                         left: 0%;
                         transform: translateX(-50%) rotate(45deg);
-                        box-shadow: 40px 39px blue;
+                        box-shadow: 35px 35px blue;
                     }
 
                     i::after {
                         left: 100%;
                         transform: translateX(-50%) rotate(-45deg);
-                        box-shadow: 38px -39px blue;
+                        box-shadow: 35px -35px blue;
+                        
                     }
                 }
 
@@ -251,7 +294,7 @@
                 }
 
                 i {
-                    position: absolute;
+                    // position: absolute;
                     inset: 0;
                     display: block;
                     // height: 100%;
@@ -272,6 +315,7 @@
                     z-index: 10;
                     transform: translateX(-50%);
                     transition: 0.5s;
+                    
                 }
 
                 i::after {
@@ -287,6 +331,7 @@
                     z-index: 10;
                     transform: translateX(-50%);
                     transition: 0.5s;
+                    
                 }
             }
 
