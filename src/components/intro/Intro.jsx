@@ -54,12 +54,21 @@ export default function Intro() {
     }, []);
 
     const nextVid = () => {
-        setGifNumber((prevState) => prevState + 1)
+        if (gifNumber < gifSrc.length - 1) {
+            setGifNumber((prevState) => prevState + 1)
+        } else {
+            setGifNumber(0)
+        }
+        
         console.log(gifNumber)
     }
 
     const prevVid = () => {
+        if (gifNumber > 0) {
         setGifNumber((prevState) => prevState - 1)
+        } else {
+            setGifNumber(gifSrc.length - 1)
+        }
         console.log(gifNumber)
     }
 
@@ -68,6 +77,13 @@ export default function Intro() {
             <div className="left">
                 <div className="imgContainer">
                     
+                <div className="prevBtn"
+                
+                onClick={prevVid}
+            >
+                <span>Prev</span>
+                <i></i>
+                </div>
                 <div className="nextBtn"
                 
                 onClick={nextVid}
@@ -75,13 +91,7 @@ export default function Intro() {
                 <span>Next</span>
                 <i></i>
                 </div>
-            <div className="prevBtn"
-                
-                onClick={prevVid}
-            >
-                <span>Prev</span>
-                <i></i>
-                </div>
+            
                     {/* <img src={process.env.PUBLIC_URL + '/assets/chess1.svg'} alt="">
                     
 			
