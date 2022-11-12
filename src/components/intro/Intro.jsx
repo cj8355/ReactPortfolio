@@ -17,7 +17,8 @@ export default function Intro() {
 
     const gifSrc = [
         "https://images.chesscomfiles.com/uploads/game-gifs/90px/brown/neo/0/cc/0/1/bUNZUW5EWkpDSlFKbEIhVGd2NkVrczBTZkg1WnB4RU5vRU5VdktXT0h5WEh5a1pLREtUWmVnN0ZrVUZ3Z2gzVWR2P3g,.gif",
-        "https://images.chesscomfiles.com/uploads/game-gifs/90px/brown/neo/0/cc/0/0/bEIwU2NEWkptdSFUa3NZSWJsSUJ1QjVRZ3Y5UkR3UndwdzghZnQ3WWRtOTh2S1FLQktUQ2xDSkNtQzZaQzMhOTM_OTA_MllJMlQwOWg_.gif"
+        "https://images.chesscomfiles.com/uploads/game-gifs/90px/brown/neo/0/cc/0/0/bEIwU2NEWkptdSFUa3NZSWJsSUJ1QjVRZ3Y5UkR3UndwdzghZnQ3WWRtOTh2S1FLQktUQ2xDSkNtQzZaQzMhOTM_OTA_MllJMlQwOWg_.gif",
+        "https://images.chesscomfiles.com/uploads/game-gifs/90px/green/vintage/0/cc/0/0/bEIhVGNEMFNtdVpKZ3Y5UkR3Undwdzcwa3M1WmJsU0tCS1pLdkswS2ZtNkxtdjg2ZHJZUWVjVENsQ0xDdkNLQ2hnM05ycU5GcVdGd253P3BXNDZZNEdZWnNBQ3VjYnVDYmFKQkdQWjZnZUNvZTA3WjA4.gif"
     ]
 
     const myGifs = gifSrc.map((source) => 
@@ -25,11 +26,12 @@ export default function Intro() {
     <div className="video1">
                     <iframe
                         src={source}
+                        width="500"
+                        height="500"
                         title="Youtube Player"
-                        frameBorder="0"
-                        className="video1"
-                        scrolling="no"
-                        
+                        frameborder="0"
+                        allowFullScreen
+                        className="gif"
                         />
                         </div>
                 
