@@ -26,9 +26,9 @@ export default function Intro() {
     <div className="video1">
                     <iframe
                         src={source}
-                        width="500"
-                        height="500"
-                        title="Youtube Player"
+                        width="720"
+                        height="720"
+                        title="Chwaa gif"
                         frameborder="0"
                         allowFullScreen
                         className="gif"
