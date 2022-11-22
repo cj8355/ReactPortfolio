@@ -1,5 +1,5 @@
 import "./menu.scss";
-import Resume from "../../Documents/resume 11.20.22.pdf";
+import Resume from "../../Documents/Resume 11.22.22.pdf";
 import AWSCCP from "../../Documents/AWS CCP.pdf";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
