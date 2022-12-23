@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/ReactPortfolio/static/css/main.819c6d4a.css",
-    "main.js": "/ReactPortfolio/static/js/main.ed89ca81.js",
+    "main.css": "/ReactPortfolio/static/css/main.cf9bbefa.css",
+    "main.js": "/ReactPortfolio/static/js/main.bcb97170.js",
     "static/media/react-transparent.png": "/ReactPortfolio/static/media/react-transparent.2afe8019efe53a8eff12.png",
-    "static/media/Resume 9.26.2022 short.pdf": "/ReactPortfolio/static/media/Resume 9.26.2022 short.25221e0f98b18ef11c8c.pdf",
+    "static/media/Resume 11.22.22.pdf": "/ReactPortfolio/static/media/Resume 11.22.22.790952aa029ca2eae856.pdf",
     "static/media/AWS CCP.pdf": "/ReactPortfolio/static/media/AWS CCP.ce00d9a8bac63fa1655f.pdf",
     "static/media/htmlsm.jpg": "/ReactPortfolio/static/media/htmlsm.b597af8ea458cbfae006.jpg",
     "static/media/mysqlsm.jpg": "/ReactPortfolio/static/media/mysqlsm.76a0e89bdbc4b2e8aaf7.jpg",
@@ -33,11 +33,11 @@
     "static/media/material-ui-svgrepo-com.svg": "/ReactPortfolio/static/media/material-ui-svgrepo-com.456bfb02539777f812137c514d397868.svg",
     "index.html": "/ReactPortfolio/index.html",
     "static/media/npm-svgrepo-com.svg": "/ReactPortfolio/static/media/npm-svgrepo-com.a9fea0de778122adc2ffa5d24eedef20.svg",
-    "main.819c6d4a.css.map": "/ReactPortfolio/static/css/main.819c6d4a.css.map",
-    "main.ed89ca81.js.map": "/ReactPortfolio/static/js/main.ed89ca81.js.map"
+    "main.cf9bbefa.css.map": "/ReactPortfolio/static/css/main.cf9bbefa.css.map",
+    "main.bcb97170.js.map": "/ReactPortfolio/static/js/main.bcb97170.js.map"
   },
   "entrypoints": [
-    "static/css/main.819c6d4a.css",
-    "static/js/main.ed89ca81.js"
+    "static/css/main.cf9bbefa.css",
+    "static/js/main.bcb97170.js"
   ]
 }
