@@ -12,32 +12,78 @@ export default function Intro() {
     const darkMode = theme.state.darkMode;
     const [timePlaying, setTimePlaying] = useState(0)
     const [gifNumber, setGifNumber] = useState(0)
+    const [width, setWidth]   = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
+    const updateDimensions = () => {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+    }
 
     
 
-    const gifSrc = [
+    const gifSrcLarge = [
         "https://images.chesscomfiles.com/uploads/game-gifs/90px/brown/neo/0/cc/0/1/bUNZUW5EWkpDSlFKbEIhVGd2NkVrczBTZkg1WnB4RU5vRU5VdktXT0h5WEh5a1pLREtUWmVnN0ZrVUZ3Z2gzVWR2P3g,.gif",
         "https://images.chesscomfiles.com/uploads/game-gifs/90px/brown/neo/0/cc/0/0/bEIwU2NEWkptdSFUa3NZSWJsSUJ1QjVRZ3Y5UkR3UndwdzghZnQ3WWRtOTh2S1FLQktUQ2xDSkNtQzZaQzMhOTM_OTA_MllJMlQwOWg_.gif",
         "https://images.chesscomfiles.com/uploads/game-gifs/90px/green/vintage/0/cc/0/0/bEIhVGNEMFNtdVpKZ3Y5UkR3Undwdzcwa3M1WmJsU0tCS1pLdkswS2ZtNkxtdjg2ZHJZUWVjVENsQ0xDdkNLQ2hnM05ycU5GcVdGd253P3BXNDZZNEdZWnNBQ3VjYnVDYmFKQkdQWjZnZUNvZTA3WjA4.gif"
     ]
 
-    const myGifs = gifSrc.map((source) => 
+    const gifSrcSmall = [
+        "/ReactPortfolio/assets/chessGifs/game1.webm",
+        "/ReactPortfolio/assets/chessGifs/game2.webm",
+        "/ReactPortfolio/assets/chessGifs/game3.webm"
+    ]
+
+    useEffect(() => {
+        window.addEventListener("resize", updateDimensions);
+        return () => window.removeEventListener("resize", updateDimensions);
+    }, []);
+
+    
+    const myGifsLarge = gifSrcLarge.map((source) => 
     (
     <div className="video1">
                     <iframe
                         src={source}
-                        width="720"
-                        height="720"
+                        // width="520"
+                        // height="520"
                         title="Chwaa gif"
-                        frameborder="0"
+                        frameBorder="0"
                         allowFullScreen
                         className="gif"
+                        width={520} 
+                        height={520} 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"
                         />
                         </div>
                 
     )
     )
-    console.log({myGifs})
+    console.log({myGifsLarge})
+
+
+    const myGifsSmall = gifSrcSmall.map((source) => 
+    (
+    <div className="video1">
+                    <iframe
+                        src={source}
+                        // width="520"
+                        // height="520"
+                        title="Chwaa gif"
+                        frameBorder="0"
+                        allowFullScreen
+                        className="gif"
+                        width={520} 
+                        height={520} 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"
+                        />
+                        </div>
+                
+    )
+    )
+    console.log({myGifsSmall})
+
+
+    
 
     // const nextGif = () => {
     //     for (let i = 0; i < myGifs.length; i++)
@@ -55,8 +101,16 @@ export default function Intro() {
 
     }, []);
 
+    // const Frame = () => {
+    //     componentDidMount() {
+    //       document
+    //         .querySelector("iframe")
+    //         .contentWindow.document.querySelector("h1#firstHeading").style.color =
+    //         "red";
+    //     }
+
     const nextVid = () => {
-        if (gifNumber < gifSrc.length - 1) {
+        if (gifNumber < ((width < 800) ? gifSrcSmall.length - 1 : gifSrcLarge.length - 1)) {
             setGifNumber((prevState) => prevState + 1)
         } else {
             setGifNumber(0)
@@ -69,7 +123,7 @@ export default function Intro() {
         if (gifNumber > 0) {
         setGifNumber((prevState) => prevState - 1)
         } else {
-            setGifNumber(gifSrc.length - 1)
+            setGifNumber(width < 800 ? gifSrcSmall.length - 1 : gifSrcLarge.length - 1)
         }
         console.log(gifNumber)
     }
@@ -113,7 +167,8 @@ export default function Intro() {
                         
                         />
                         </div> */}
-                        {myGifs[gifNumber]}
+                        {(width > 800) ? myGifsLarge[gifNumber] : myGifsSmall[gifNumber]}
+                
                 
                 </div>
             </div>
